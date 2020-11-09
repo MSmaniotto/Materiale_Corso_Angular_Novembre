@@ -1,0 +1,5 @@
+<input [disabled]="activation" [(ngModel)]="text" type="text">
+<br/>
+<button (click)="changeActivation()">Attiva/Disattiva</button>
+
+<p [class]="activeClass">{{text}}</p>
