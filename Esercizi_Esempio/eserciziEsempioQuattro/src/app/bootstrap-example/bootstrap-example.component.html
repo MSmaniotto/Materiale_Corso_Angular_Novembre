@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="box">
+        <p>People</p>
+        <ul class="list-group">
+          <li *ngFor="let person of people" class="list-group-item">
+            {{person.name}} - {{person.age}}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="box">
+        <p>Products</p>
+        <ul class="list-group">
+          <li *ngFor="let product of products" class="list-group-item">
+            {{product.productName}} - {{product.price | currency}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <a name="home" id="home" class="btn btn-primary" routerLink="" role="button">Home</a>
+  </div>
+</div>
